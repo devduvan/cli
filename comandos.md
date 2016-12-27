@@ -37,6 +37,7 @@ _Work in progress_
 - `cp` [archivo/directorio origen] [archivo/directorio destino]: copia un archivo o directorio desde un origen a un destino
 - `cp -r` [directorio origen] [directorio destino]: copia un directorio y todos sus directorios hijos de forma recursiva
 - `open [-a APP] [ FILE | DIRECTORY ]`: abre el (archivo o directorio) con la aplicación por defecto en el sistema operativo, si se manda la bandera `-a` usará la APP para abrirlo
+- `find [RUTA] -iname [NAME]`: busca las coincidencias con el nombre en la ruta específicada
 
 ### Operadores para STDIN, STDOUT/STDERR
 `````
@@ -77,6 +78,7 @@ Manda al STDIN de `command_1` el contenido de FILE.
 ### Combinación de teclas como comandos
 1. `[ctrl]-C` - este comando **termina** el proceso que se esté ejecutando en la terminal, **haya o no acabado** de ejecutarse.
 2. `[ctrl]-D` - el sistema lo interpreta como _EOF_ (End Of File) y cierra el _stream_ de entrada (STDIN) para un archivo en donde se esté escribiendo desde la terminal.
+3. `[ctrl]-R` - este comando busca coincidencias en los comandos ejecutados en la terminal.
 ### Editor VI
 ## Cómo salir de VI/VIM
 Ejecutar la siguiente combinación de teclas para 
